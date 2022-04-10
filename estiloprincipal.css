@@ -1,0 +1,357 @@
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face{
+  font-family: 'Safari-PersonalUse';
+  src: url(Safari-PersonalUse.otf);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .contenido .btn-abrir-popup {
+    display: flex;
+  }
+  .content .form {
+    margin-left: -50px;
+    overflow: hidden;
+  }
+  .content .info {
+    padding-bottom: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .imgcochesafari1 {
+    /*transform: rotate(-270deg);*/
+    margin-right: 80%;
+    max-width: 40%;
+    max-height: 40%;
+  }
+  .section-center {
+    width: 95vw;
+  }
+
+  .content .info {
+    padding-bottom: 30%;
+    padding-left: 24.2%;
+    padding-right: 24.2%;
+  }
+  .paquete{
+    margin-right: 3%;
+  }
+}
+
+
+  body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("img/portadaSafari4.jpg");
+    font-size: 1rem
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: 100vh;*/
+    background-position: center center;
+  }
+  .cochesafari1 {
+
+    /*background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    left: 40%;
+    right: 20%;
+    top: 20%;
+    bottom: 20%
+    position:absolute;
+    left:200px;
+    animation: movimiento 3s;
+    /* overflow: hidden; */
+    animation-duration: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: none;
+  }
+
+  .imgcochesafari1{
+    max-width: 20%;
+    max-height: 40%;
+    position:absolute;
+    bottom:160px;
+    left: 800px;
+    text-shadow: 0 0 5px rgba(216, 186, 51, 77), 0 0 10px rgba(216, 186, 51, 77),
+      0 0 20px rgba(216, 186, 51, 77);
+    animation-duration: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes movimiento{
+    from{
+      cochesafari1: top;
+      }to{
+      cochesafari1: bottom;
+      }
+  }
+  .contenido .btn-abrir-popup {
+    padding: 0 20px;
+    margin: 5%;
+
+    height: 60px;
+
+
+    color: #786B32;
+    background: transparent;
+    border-color:  #786B32;
+    border:#786B32 2px inset;
+    border-radius: 20px;
+
+    font-family: 'Safari-PersonalUse';
+    font-size: 3rem;
+    position:absolute;
+    left:750px;
+    top:45px;
+    /* left: -700px;
+    top: -150px; */
+    /*cursor: pointer;*/
+    transition: 0.3s ease all;
+    text-shadow: 0 0 5px rgba(216, 186, 51, 77), 0 0 10px rgba(216, 186, 51, 77),
+      0 0 20px rgba(216, 186, 51, 77);
+    border-shadow: 0 0 5px rgba(216, 186, 51, 77), 0 0 10px rgba(216, 186, 51, 77),
+        0 0 20px rgba(216, 186, 51, 77);
+ }
+ .contenido .btn-abrir-popup:hover {
+   color: #E8C31B;
+   padding-left: 1.5rem;
+   transform: scale(1.1, 1.1);
+   border-color: #E8C31B;
+ }
+
+
+
+nav {
+
+
+}
+/*.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}*/
+/*.nav-toggle {
+   font-size: 1.5rem;  /* no definitivo */
+ /*color: rgb(135, 156, 248);
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: #345;
+  transform: rotate(90deg);
+}
+/* a implementar aun */
+
+.links a {
+  /*font-family: 'Russo One', sans-serif;*/
+  font-family: 'Safari-PersonalUse';
+  color: #786B32;
+  font-size: 6rem;
+  height:100px;
+  position: relative;
+  left: -400px;
+  top:0px;
+  /*text-transform: capitalize;*/
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+  margin-right: 100px;
+  text-shadow: 0 0 5px rgba(216, 186, 51, 77), 0 0 10px rgba(216, 186, 51, 77),
+    0 0 20px rgba(216, 186, 51, 77); /*0 0 40px rgba(38, 104, 127, 1);
+    0 0 80px rgba(38, 104, 127, 1), 0 0 90px rgba(38, 104, 127, 1),
+    0 0 100px rgba(38, 104, 127, 1), 0 0 140px rgba(38, 104, 127, 1),
+    0 0 180px rgba(38, 104, 127, 1);*/
+
+
+
+}
+.links a:hover {
+  color: #E8C31B;
+  padding-left: 1.5rem;
+  transform: scale(1.1, 1.1);
+}
+
+.links {
+  height: 0;
+  flex-grow: 1;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  justify-content: space-around;
+}
+.show-links {
+  height: 10rem;
+}
+@media screen and (min-width: 800px) {
+  /*.nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }*/
+  .nav-header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-toggle {
+    font-size: 2rem;
+    /* no definitivo */
+    color: rgb(135, 156, 248);
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .links {
+    height: auto;
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+/*  */
+/* FOOTER */
+/*  */
+.footer {
+  padding-bottom: 2rem;
+  background: #222;
+  display: grid;
+  place-items: center;
+
+}
+.socialIcons {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.socialIcons__socialIcon {
+  padding-left: 1rem;
+  font-size: 2rem;
+  color: rgb(196, 135, 4);
+}
+.socialIcons__socialIcon:hover {
+  color: rgb(248, 228, 186);
+}
+
+.footer p {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  color: rgb(83, 83, 82);
+  text-align: center;
+}
+
+/*  */
+/* CONTACT */
+/*  */
+
+/*.container {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+    background: transparent;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: 'Forehead Fantasy';
+    font-size: 35px;
+    color: #FFC733;
+    margin: 10px;
+    padding: 2px;
+}
+.content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.content .form {
+    padding: 20px;
+}
+
+input[type="text"], textarea {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 4px;
+    border: 1px solid #444444;
+    font-size: 16px;
+    color: #444444;
+}
+
+.content .form input[type="text"]:nth-child(1) {
+    width: 50%;
+    margin: 10px;
+    padding: 20px;
+}
+
+.content .form input[type="text"]:nth-child(2) {
+    width: 46%;
+    margin: 0;
+    padding: 20px;
+}
+
+.content .form input[type="text"]:nth-child(3) {
+    width: 98%;
+    margin: 10px;
+    padding: 20px;
+}
+
+textarea {
+    width: 98%;
+    height: 150px;
+    margin: 10px;
+}
+
+.content .form input[type="submit"] {
+    padding: 20px 30px;
+    color: #ffffff;
+    background-color: #FFC733;
+    border-radius: 6px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border: 1px solid #ff4c4c;
+    box-shadow: 0px 0px 2px #ff4c4c;
+}

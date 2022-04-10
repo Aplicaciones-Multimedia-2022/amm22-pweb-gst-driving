@@ -1,0 +1,166 @@
+/*
+===============
+Estilos globales
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face{
+  font-family: 'Safari-PersonalUse';
+  src: url(Safari-PersonalUse.otf);
+}
+  body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("img/portadaSafari4.jpg");
+    font-size: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+ul {
+  list-style-type: none;
+}
+h1 {
+  font-size:3rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+/*
+===============
+Cajas creadores
+===============
+*/
+.section-title {
+  text-align: right;
+  margin: 10%;
+  padding: 0 20px;
+  margin: 5%;
+  height: 60px;
+  color: #786B32;
+  background: transparent;
+  font-family: 'Safari-PersonalUse';
+  font-size: 5rem;
+  position:absolute;
+  left:750px;
+  top:45px;
+  text-shadow: 0 0 5px rgba(216, 186, 51, 77), 0 0 10px rgba(216, 186, 51, 77),
+    0 0 20px rgba(216, 186, 51, 77);
+  border-shadow: 0 0 5px rgba(216, 186, 51, 77), 0 0 10px rgba(216, 186, 51, 77),
+      0 0 20px rgba(216, 186, 51, 77);
+
+}
+.card {
+  width: 27vw;
+  height:30vw;
+  margin:1.25rem auto;
+  background: #fff;
+  border-radius: 1.75rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position:relative;
+  left:250px;
+  bottom: 250px;
+
+
+
+}
+.card:hover {
+  transform: scale(1.01, 1.01);
+}
+.card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 30%;
+  object-fit: cover;
+  position:relative;
+  left:9px;
+  bottom: 95px;
+}
+
+.card-1 {
+  max-width: 446px;
+  text-align: center;
+  padding-bottom: 3.5rem;
+}
+.card-1 header {
+  height: 127px;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.card-1 h4 {
+  font-size: 22px;
+  position:relative;
+  left:10px;
+  bottom: 90px;
+  font-family: 'Safari-PersonalUse';
+  color:#786B32;
+}
+.card-1 p {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  padding: 0 2rem;
+  color:#786B32;
+  position:relative;
+  left:10px;
+  bottom: 90px;
+}
+.card-1 a {
+  text-decoration: none;
+  color: #fff;
+  position:relative;
+  left:3px;
+  top: 1px;
+}
+.Icons {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.Icons__socialIcon {
+  padding-left: 1rem;
+  font-size: 2rem;
+  color: rgb(175, 120, 0) !important;
+}
+.Icons__socialIcon:hover {
+  color: rgb(7, 7, 7) !important;
+  transform: scale(1.1, 1.1);
+}
+
+/* facebus */
+
+.btn {
+  padding: 1rem 2rem;
+  letter-spacing: 1.6px;
+  font-size: 1rem;
+  color: #fff;
+  background: #786B32;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  position:relative;
+  left:10px;
+  bottom: 180px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.1, 1.1);
+}
